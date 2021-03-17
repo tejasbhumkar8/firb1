@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_web_dashboard/src/commons/theme.dart';
 import 'package:flutter_web_dashboard/src/widget/card_tile.dart';
 import 'package:flutter_web_dashboard/src/widget/chart_card_tile.dart';
-import 'package:flutter_web_dashboard/src/widget/comment_widget.dart';
-import 'package:flutter_web_dashboard/src/widget/profile_Widget.dart';
-import 'package:flutter_web_dashboard/src/widget/project_widget.dart';
+//import 'package:flutter_web_dashboard/src/widget/comment_widget.dart';
+//import 'package:flutter_web_dashboard/src/widget/profile_Widget.dart';
+//import 'package:flutter_web_dashboard/src/widget/project_widget.dart';
 import 'package:flutter_web_dashboard/src/widget/quick_contact.dart';
 import 'package:flutter_web_dashboard/src/widget/responsive_widget.dart';
 import 'package:flutter_web_dashboard/src/widget/sidebar_menu..dart';
@@ -51,7 +51,7 @@ class MainPage extends StatelessWidget {
                           elevation: 4,
                           centerTitle: true,
                           title: Text(
-                            'Flutter Dashboard Web',
+                            'Dashboard',
                           ),
                           backgroundColor: drawerBgColor,
                         ),
@@ -125,7 +125,7 @@ class MainPage extends StatelessWidget {
                                               children: <Widget>[
                                                 ChartCardTile(
                                                   cardColor: Color(0xFF7560ED),
-                                                  cardTitle: 'Bandwidth usage',
+                                                  cardTitle: 'Total usage',
                                                   subText: 'March 2017',
                                                   icon: Icons.pie_chart,
                                                   typeText: '50 GB',
@@ -135,7 +135,7 @@ class MainPage extends StatelessWidget {
                                                 ),
                                                 ChartCardTile(
                                                   cardColor: Color(0xFF25C6DA),
-                                                  cardTitle: 'Download count',
+                                                  cardTitle: 'Unit count',
                                                   subText: 'March 2017',
                                                   icon: Icons.cloud_upload,
                                                   typeText: '35487',
@@ -145,7 +145,7 @@ class MainPage extends StatelessWidget {
                                             SizedBox(
                                               width: 20,
                                             ),
-                                            ProjectWidget(media: _media),
+
                                           ],
                                         ),
                                       ),
@@ -165,13 +165,7 @@ class MainPage extends StatelessWidget {
                               child: Row(
                                 crossAxisAlignment: CrossAxisAlignment.stretch,
                                 mainAxisAlignment: MainAxisAlignment.start,
-                                children: <Widget>[
-                                  CommentWidget(media: _media),
-                                  SizedBox(
-                                    width: 20,
-                                  ),
-                                  ProfileWidget(media: _media),
-                                ],
+
                               ),
                             ),
                             SizedBox(height: 20),
